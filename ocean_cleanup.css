@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;700&family=EB+Garamond&family=Special+Elite&display=swap');
+
+/* body and main */ 
+
+body {
+    position: relative;
+    margin: 0 auto 0 auto;
+    overflow-x: hidden;
+    min-width: 300px;
+}
+
+main {
+    font-family: 'EB Garamond';
+    margin: 0 auto 0 auto;
+    font-size: 16pt;
+    max-width: 80ch;
+
+
+    padding: 0 2em 0 2em;
+}
+
+/* general */
+
+h2, h3, figcaption {
+    font-family: 'Special Elite', Times;
+}
+
+h2 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+/* Header */ 
+
+header {
+    text-align:center;
+    background-image: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/ocean.jpg");
+    background-position: center;
+}
+
+#THE {
+    text-transform: uppercase;
+    margin-top: 0.87em;
+    margin-right:0.1em;
+    font-family: "Darker Grotesque", Times;
+    font-weight: 300;
+    font-size: 1.5em;
+    vertical-align: top;
+    text-shadow: 5px 5px 8px #2f2f2f;
+}
+
+#OCEAN {
+    text-transform: uppercase;
+
+    font-family: "Darker Grotesque", Times;
+    font-weight: 400;
+    font-size: 4em;
+    text-shadow: 5px 5px 10px #2f2f2f;
+}
+
+#CLEANUP {
+    text-transform: uppercase;
+
+    font-family: "Darker Grotesque", Times;
+
+    font-size: 4em;
+    text-shadow: 5px 5px 15px #2f2f2f;
+}
+
+header h1 {
+    margin: 2.9em auto 2.9em auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: white;
+    display:inline-block;
+}
+
+header span {
+    display: inline-block;
+}
+
+/* Nav Bar */
+
+#tech_list {
+    display: none;
+}
+
+nav ul {
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.363);
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-weight:bolder;
+}
+
+nav a {
+    color: white;
+    padding: 0.7rem 2.5rem;
+    display:block;
+    font-family: 'Darker Grotesque';
+    font-size: 1.5em;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:visited {
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: rgba(255, 255, 255, 0.813);
+}
+
+.list:hover{
+    color: #04888c;
+}
+
+/* Summary */
+
+#summary {
+    display: none;
+}
+
+#summary_contents {
+    padding: 2em 0em;
+}
+
+/* Main body attachments*/
+
+main img {
+    padding: 0.7em 0.7em 1.2em;
+    height: 14em;
+}
+
+#youtube {
+    width: 100%;
+    height: 22em;
+    border: 0;
+}
+
+/* Images left + right */
+
+.float-right, .float-left {
+    color: rgb(156, 154, 154);
+    outline-color: rgb(204, 204, 204);
+    outline-style:solid;
+    padding:0.5em;
+    text-align: right;
+    border-radius: 3px;
+    box-shadow: 6px 6px 25px rgb(138, 137, 137);
+    font-family: 'Special Elite';
+    font-size:0.8em
+}
+
+/* Image on left side */
+
+.float-left {
+    transform: rotate(-2deg);
+    margin-bottom: 21px;
+    float: left;
+    margin-left: 0;
+}
+
+/* Image on right side */
+
+.float-right {
+    transform: rotate(2deg);
+    float: right; 
+    margin-right: 0;
+}
+
+/* Five Gyres */
+
+#five_gyres {
+    width:23em;
+}
+
+/* Boyan Slat */
+
+#boyan_slat {
+    margin-left:1.4em;
+    margin-top:1.5em;
+}
+
+#boyan_slat img {
+    width:15.5em;
+}
+
+/* System */
+
+#system {
+    margin-top: 2.2em;
+    margin-bottom: 4em;
+    margin-right: 2.5em;
+}
+
+#system img {
+    width:24em;
+    height:15em;
+}
+
+/* Interceptor */ 
+
+#interceptor {
+    margin-top:1.1em;
+    margin-bottom:3em;
+    margin-left: 1.5em;
+}
+
+#interceptor img {
+    width:23em;
+    height: 17em;
+}
+
+
+/* Table - center */
+.center {
+    margin: 1em 0em;
+    border-collapse: collapse; 
+    border-bottom: 1.5pt solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table caption {
+    border-bottom: 1pt solid;
+    border-top: 1.5pt solid;
+}
+
+tr {
+    border-top: 0.5pt solid black;
+}
+
+#sec_ocean_cleanup_p2 {
+    margin: 0;
+}
+
+/* Tech quote */
+#quotation {
+    color: rgb(1 156 159);
+    font-size: 2em;
+    text-align: center;
+    display:inline-grid;
+    padding: 0;
+}
+
+/* Flexbox settings- calculator */
+
+.f_box1 {
+    display: flex;
+}
+
+.f_box2 {
+    flex-basis:80ch;
+    flex-shrink: 0;
+    padding-right: 3.5em;
+}
+
+/* Calculator */
+
+#sec_calculator {
+    height: 68em;
+    background-color: rgb(255 246 198);
+    border-radius: 25px;
+    outline: 2px solid #d9ce92;
+    padding:15px;
+    box-shadow: 8px 8px 30px rgb(138, 137, 137);
+}
+
+#calc_title {
+    margin-top: 0;
+    padding-top: 0.1em;
+    padding-bottom:0.1em;
+}
+
+#sec_calculator form {
+    width: 14.5em;
+}
+
+#sec_calculator input{
+    width: 3em;
+}
+
+#sec_calculator tr{
+    width: 3em;
+    font-size:1em;
+}
+
+#sec_calculator label{
+    color: black;
+}
+
+#tip {
+    margin-top:1em;
+    margin-bottom:0.7em;
+}
+
+#tip_para {
+    font-size: 16pt;
+}
+
+button {
+    position: absolute;
+    background-color: rgb(245, 232, 163);
+    outline: 1px solid #dbce83;
+    border-radius: 7px;
+    float: right;
+    padding:0.6em 0.4em;
+    margin-top:1em;
+    bottom:20em;
+    margin-left: 13.5em;
+}
+
+/* Footer */ 
+
+footer {
+    position: relative;
+    background-image: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/ocean.jpg");
+    background-position: center;
+    height: 13em;
+    margin-top:2em;
+}
+
+#footer_text {
+    font-family: 'Darker Grotesque';
+    font-weight: 300;
+    font-size: 1.6em;
+    text-align: center;
+    padding-top: 3.2em;
+}
+
+footer a {
+    color: black;
+}
+
+
+/* Media Screen to adjust for different sizes */
+
+@media screen and (max-width:1652px) {
+
+    .f_box1 {
+        flex-direction: column;
+    }
+
+    .f_box2 {
+        flex-direction: column;
+        width:100%;
+    }
+
+    .f_box1 #sec_calculator {
+        width:14.5em;
+        margin: 1.5em auto 2em auto;
+    }
+
+    button {
+
+        bottom:22.8em;
+        margin-left: 14em;
+    }
+
+    main {
+        overflow-x: hidden;
+        margin: 0 auto 0 auto;
+        width:100%;
+    }
+    
+}
+
+@media screen and (max-width:1026px) {
+
+    nav li {
+        display: block;
+        padding: 0.2em;
+    }
+
+    header {
+        height: 35em;
+    }
+
+    header h1 {
+        font-size: x-large;
+        margin-top:3.5em;
+        margin-bottom:4.05em;
+    }
+    
+}
+    
+
+@media screen and (max-width:800px) {
+
+    nav li {
+        display: block;
+        padding: 0.4em;
+    }
+
+    header h1 {
+        font-size: large;
+        margin-top:5.4em;
+        margin-bottom:4.7em;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .float-right, .float-left {
+        font-size:60%;  
+    }
+    
+}
+
+@media screen and (max-width:591px) {
+    
+    header h1 {
+        font-size:small;
+        margin-top:8em;
+        margin-bottom:8.1em;
+    }
+
+    main {
+        overflow-x: hidden;
+        margin: 0 auto 0 auto;
+        width:100%;
+    }
+    
+    h1 {
+        text-align: center;
+
+    }
+
+    .float-right, .float-left {
+        size: 10%;
+    }
+}
+
+
+
+@media screen and (max-width:400px) {
+    
+    header h1 {
+        font-size:7pt;
+        margin-top:12em;
+        margin-bottom:12.5em;
+    }
+
+}
+
+@media screen and (max-width:329px) {
+
+    .float-right, .float-left {
+        font-size:40%;
+        padding:2em 2em;
+    }
+}
